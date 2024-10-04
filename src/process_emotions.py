@@ -111,7 +111,7 @@ def save_batch_info(csv_file: str, jsonl_file: str, metadata_file: str, openai_f
 
 def main(args):
     if args.check_all_status:
-        with open("batch_ids.json", "r") as f:
+        with open("batch_processing/batch_ids.json", "r") as f:
             all_batch_ids = json.load(f)
         for batch_id in all_batch_ids:
             status, errors = check_batch(batch_id)
