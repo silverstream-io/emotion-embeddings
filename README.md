@@ -58,10 +58,16 @@ To check the status of all batch jobs:
 python src/process_emotions.py --check-all-status
 ```
 
-To fetch and upsert embeddings:
+To retrieve and save embeddings:
 
 ```bash
-python src/process_emotions.py --fetch-and-upsert
+python src/process_emotions.py --retrieve-and-save
+```
+
+To upsert embeddings:
+
+```bash
+python src/process_emotions.py --upsert
 ```
 
 ## License
